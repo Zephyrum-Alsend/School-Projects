@@ -1,0 +1,28 @@
+Tell Visual Studio where to find:
+1. Include files
+2. Library(s)
+3. Tell the name of the library(s) (There's a pragma for this)
+
+Close files
+Close connections
+Delete created space (new operator)
+
+Derived classes create object of parent class.
+Friend function has access to class privates.
+Don't do friend classes unless cout (Makes output easier).
+
+STL uses New and Delete behind the scenes.
+
+Container -
+Vector - smart array
+	vector <duck> x;
+	x.size();
+deque - double end queue
+list
+stack
+map & multimap - binary trees
+	key, value
+set & multiset
+hash-map & hash-multimap
+unordered-map & unordered-multimap - universal hash-map
+unordered-set & unordered-multiset - universal

@@ -1,0 +1,66 @@
+Iterators are (like) pointers that let you step through containers
+Algorithms are applied to containers
+	i.e. sort, replace
+		Algorithms might be in the container or global algs, use container 
+		b/c optimized for container
+Most used:
+Vector Map
+	Keeps track of:
+	size - 0
+	capacity - 0
+	pointer - NULL
+push_back adds to end of vector
+
+#include <vector>
+//size = 0, capacity = 1000
+vector<int> v5;
+v5.reserve(1000);
+//size = 100, capacity = 100
+vector<int> v6(100);
+//Clears out vector, but capacity unchanged
+v7.clear;
+//Refits capacity to size, capacity == size
+v7.shrink_to_fit();
+
+Can address vector data like array data.
+
+
+#include <map>
+mm["vic"] = 23; //stored as ("vic", 23)
+int x = mm["duck"] //sticks "duck" into mm and gives default value (0 for INT)
+
+
+"auto" deduces the datatype based upon what is being assigned. Probably stupid.
+
+<unordered_map> faster than <map>. Otherwise not much difference.
+
+for (auto y : x) //y takes on successively the elements of x (vector or array)
+
+lambda function has no name and is defined where it is called.
+//example - starts with []
+sort(x.begin, x.end, [](Fred &a, Fred &b) -> bool { return a.x < b.x; });
+
+find_first_not_of
+find_last_not_of
+sting::npos is value when argument not found in string
+
+CODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODERED
+
+#include <string>
+#include <vector>
+#include <sstream>
+using namespace std;
+
+void ParseCsv(string x, vector<string> &y)
+{
+	y.clear();
+	replace(x.begin(), x.end(), ',', ' ');
+	istringstream ins(x);
+	string temp;
+	while(ins >> temp;)
+	{
+		y.push_back(temp);
+	}
+}
+
+CODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODERED

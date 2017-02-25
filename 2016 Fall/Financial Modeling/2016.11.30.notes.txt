@@ -1,0 +1,34 @@
+Data Access
+1. Keep data in memory
+	Know how much memory is needed and rethink strat if too much mem
+Common databases
+	SQL Database - convenient but slow
+	CSV files - text file and read by excel
+	Binary files - can organize by type
+	Shared memory
+
+2. Record data in Vector/Array
+	Make all vectors same size.
+
+Stock data comes in FLoat
+21.513 (float) -> 21.512995 (double)
+* 10000
+215129.945
+(double)(int)215130.45 / 10000
+//Gives the accuracy of a double, converted from float
+
+vector<double> x;
+x.reserve(2500); //reserves space/sets size yourself
+
+Make single instance of class:
+//Singleton Class!
+Static Duck *GetInstance();
+Static Duck *duckPtr;
+
+Duck * Duck::duckPtr=NULL;
+Duck * Duck::GetInstance()
+{
+	If(duckPtr != NULL) return duckPtr;
+	duckPtr = new Duck;
+	return duckPtr;
+}

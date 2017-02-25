@@ -1,0 +1,10 @@
+For Visual Studios.
+
+1) #include "library.h"
+2) Configuration Properties/VC++ Directories/Include Directories
+	(click and edit, add new entry)
+3) Project/properties/Configuration Properties/VC++ Directories/Library Directories
+	(click and edit, add new entry)
+4) Configuration Properties/Linker/Input/Additional Dependencies (e.g.: library.lib)
+5) Place .dll files either in the directory you'll be opening your final .exe or
+   into Windows/system32

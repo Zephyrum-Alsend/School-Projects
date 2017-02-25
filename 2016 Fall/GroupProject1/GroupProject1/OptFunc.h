@@ -1,0 +1,1 @@
+double OptFunc(double x, double, double z);
