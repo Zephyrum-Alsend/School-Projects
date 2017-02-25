@@ -1,0 +1,6 @@
+﻿  RCDate.cpp
+e:\rcdate\rcdate\rcdate.cpp(13): warning C4804: '<': unsafe use of type 'bool' in operation
+e:\rcdate\rcdate\rcdate.cpp(20): warning C4804: '<': unsafe use of type 'bool' in operation
+e:\rcdate\rcdate\rcdate.cpp(20): warning C4804: '<=': unsafe use of type 'bool' in operation
+  RCDate.vcxproj -> E:\RCDate\Debug\RCDate.exe
+  RCDate.vcxproj -> E:\RCDate\Debug\RCDate.pdb (Partial PDB)

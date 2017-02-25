@@ -1,0 +1,42 @@
+PART I
+
+2.) Speed is important to reduce the time for the iteration process and also to implement
+	the model before it becomes outdated. Every 6 months or so models should be updated
+	so hopefully the simulation is fast enough to get a model into action before then.
+
+3.) With unadjusted prices, values can suddenly double or half or some other crazy
+	multiplication due to splits or spinoffs which can cause charts to fluctuate
+	wildly. Indicators will mistake this sudden jump in price as something
+	terribly wrong or terribly right and buy/sell when really nothing special is
+	going on. Adjusted prices smooth out these jumps and keep the models from doing
+	anything stupid.
+
+4.) In physics and math, the problem's parameters are constant. Gravity is constant, pi
+	is constant, the pull of magnetism per particle is constant -- which allows 
+	mathematicians and physicists to take their time getting precise answers. The
+	stock market is fluctuating constantly so the solution to the problem (of making
+	a profit) is also fluctuating. One solution will only work for a period of time.
+
+5.) Look-ahead bias is when a model, during simulation, pulls data that it theoretically
+	should not have access to. For example, testing a model on 2003 - 2008 to predict
+	how it works in 2009 and the model is fitted to data from 2009. It can easily
+	cause overfitting a model and also depends upon data FROM THE FUTURE.
+
+6.) The numbers would get quite large but that in of itself is not much of an issue.
+	What is an issue is stocks are also traded in fractions of pennies. With an INT,
+	how are decimal places stored? They aren't! So roundoff errors abound!
+
+8.) C++ (excluding C) is the fastest higher level programming language in use. Simulation
+	frameworks need to be fast and C++ provides that speed.
+
+9.) When a stock's price gets exceptionally low, it is a sign of a weak business and 
+	likely to disappear rather than grow. Investing in a stock below, say, 6$, that
+	5$ invested may disappear as the stock price plummets due to business failure.
+	Stocks above the threshold will stick around long enough to make a profit.
+
+PART II
+
+1.) NVIDIA and AMD are both manufacturers of graphics cards and often compared when debates
+	of what card to buy arise on forums. As competitors in the same field, they should
+	correlate.
+	The resulting Correlation is -0.16795. It did not match expectations.

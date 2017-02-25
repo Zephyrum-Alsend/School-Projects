@@ -1,0 +1,106 @@
+1.) Text files will be faster to extract from and faster to overwrite with new data.
+A vendor's SQL Database is more robust than a text file and vendors have more up to date information.
+
+2.) Mistakes can be made in a GUI and graphical interfaces require more work behind the scenes to operate.
+A configuration file is just plain text and can be easily read by a program.  Editing values is also faster.
+
+3.) Successful models need to be successful consistently.  Obtaining the highest PNL may
+optimize the model on a peak/spike, which will yield inconsistent or one-off success.
+
+4.) Investing in the stock market has risk associated with it.  Hedges reduce the risk by
+having a stake in something that always performs well, like SPY.
+
+5.) It is impossible to see a pattern until after it happens.  Riding a stock until the 
+pattern is recognized may have the position left at a bad time.  Limiting how long
+reduces the risk of holding a position until it is detrimental.
+
+6.) 
+
+7.) The stock market is in constant flux; every model needs to be adjusted periodically
+or it begins to perform poorly.
+
+8.) A hit ratio is the ratio of profitable trades to unprofitable trades.  A hit ratio
+of .44 is not necessarily bad because the minority of profitable trades could earn more 
+than the unprofitable trades lost.  Vice versa for a hit ratio of .62.
+
+9.) 
+
+10.) 
+
+12.) The data vendors provide is more up to date than free data.
+
+13.) 
+
+14.) The next step is to flip/reverse the indicators.  This may not work because not all
+indicators should be flipped and a Sharpe Ratio of 4.2 is a little too good to be true.
+
+15.) Testing over a population gives a better indication of how the model will perform across
+various markets in various states.  A general sense of performance can be gathered by testing
+over a decade or longer.  It also can prevent overfitting a model to a specific market and time.
+
+16.) Unadjusted prices, over a period including a split or dividend, can throw the calculations
+for a loop.
+
+17.) Models in reference books are outdated and common knowledge.  When everyone uses the same
+model, that model suddenly stinks (i.e. if everyone starts buying IBM, it'll throw the market into
+a tizzy).  Models need to be adjusted periodically to fit the current market.
+
+18.) Ducks.
+
+
+PART II
+(POINT I)
+Date		Closing Price	Dividend	Split	Adjusted
+20161221	100		0		2	100
+
+100/(1+BT)
+BT= (2*100 + 0 - 202)/(202)
+
+20161220	202		1.00		0	101
+
+101/(1+BT)
+BT= (1*202 + 1 - 205)/(205)
+
+20161219	205		2.0		2	101.995074
+
+101.995074/(1+BT)
+BT= (2*205 + 2 - 401)/(401)
+
+20161216	401		0		0	99.2719045
+
+At-1 = At/(1 + BT)
+BT = (StPt + Dt - Pt-1)/(Pt-1)
+t = (subscript) Day data is pulled from
+S = split ratio
+P = price
+D = dividend value
+A = adjusted price
+
+
+
+(POINT II)
+I looked at Microsoft (MSFT), S&P 500(^GSPC), NASDAQ(^IXIC) and Ubisoft(UEN.F) over the past year.
+
+If the 5DMA is 2% higher or lower than the 50DMA, enter a position.
+The price can fluctuate when the 5MDA and 50DMA are close to each other. Adding a buffer prevents these fluctuations from causing rapid shifts
+in position.
+ 
+If the 50DMA is 10%+ lower or higher than the 50DMA a month ago, exit position.  Do not re-enter that position for two weeks.
+A trend among charts is that when this happened, the stock would fluctuate almost widely before recovering upwards.  The two week break keeps
+us out of the volatile period.
+
+If the 5DMA is 10% off from or crosses the 50DMA, exit position.
+When the 5DMA gets 10% off from the 50DMA, the stock reverses direction shortly after or fluctuates widely.  It predicts the peak before it
+turns.  This percentage can be adjusted for certain levels of risk.
+
+If the 5DMA is within the 2% - 10% range, do not enter position if the 5DMA lowered by 5% compared to previous two day's 5DMA's.
+This checks if the 5DMA is on a collision course with the 50DMA, predicting the stock will continue to lower in price.
+
+If the 5DMA is within the -2% - -10% range, do not enter a position if the 5DMA increased by 5% compared to the previous two day's 5DMA's.
+Same as above, but in the opposite direction.
+
+
+Using the VWAP will give a truer sense of the average price.  Volume can also serve as an indicator of if a stock is being overtraded.
+If, say, the volume traded has increased by 5% over yesterday, the current price trend may strengthen and the model will either enter
+or refrain from exiting a position based on that.  Volume traded over time can also be used to tell when a stock is dropping off or
+climbing up the market.  Combined with the DMA, we can decide if a stock should be abandoned or held for an extended period of time.

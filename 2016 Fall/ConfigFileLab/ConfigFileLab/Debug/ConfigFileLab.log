@@ -1,0 +1,5 @@
+﻿  ConfigFileTest.cpp
+e:\configfilelab\configfilelab\configfiletest.cpp(18): warning C4018: '<': signed/unsigned mismatch
+e:\configfilelab\configfilelab\configfiletest.cpp(29): warning C4018: '<': signed/unsigned mismatch
+e:\configfilelab\configfilelab\configfiletest.cpp(54): warning C4018: '<': signed/unsigned mismatch
+  ConfigFileLab.vcxproj -> E:\ConfigFileLab\Debug\ConfigFileLab.exe

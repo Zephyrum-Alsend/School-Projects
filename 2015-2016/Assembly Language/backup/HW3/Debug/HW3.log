@@ -1,0 +1,14 @@
+﻿Build started 2/21/2016 2:57:58 PM.
+     1>Project "E:\Assembly Language\HW2 - Copy\HW3\HW3.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (HW2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>_MASM:
+         Assembling lcrocket_3_2.asm...
+         cmd.exe /C "C:\Users\Ffastyl\AppData\Local\Temp\tmpf1099015ce7b4b96b810215c328f07db.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\lcrocket_3_2.obj" /Fl".lst" /I "E:\Assembly Language\Irvine" /W3 /errorReport:prompt  /Talcrocket_3_2.asm
+     1>E:\Assembly Language\Irvine\SmallWin.inc(11): warning A4011: multiple .MODEL directives found
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations\masm.targets(50,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\lcrocket_3_2.obj" /Fl".lst" /I "E:\Assembly Language\Irvine" /W3 /errorReport:prompt  /Talcrocket_3_2.asm" exited with code 1.
+     1>Done Building Project "E:\Assembly Language\HW2 - Copy\HW3\HW3.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.35

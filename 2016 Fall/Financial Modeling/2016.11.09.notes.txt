@@ -1,0 +1,17 @@
+void Parse(const string &param, string &left, string &right)
+{
+	int ieq = param.find_first_of('=');
+	if (ieq == string::npos)
+	{
+		left = "";
+		return;
+	}
+	left = param.substr(0, ieq);
+	right = param.substr(ieq + 1);
+}
+
+string fred = "   aaa   =   ducks are great!";
+string left, right;
+Parse(fred, left, right);
+//left = '   aaa   '
+//right = '   ducks are great!'

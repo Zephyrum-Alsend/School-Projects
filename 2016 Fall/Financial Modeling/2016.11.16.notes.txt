@@ -1,0 +1,101 @@
+C++ has fstream
+C has fopen, fprint, fread, fwrite, fclose, fscanf
+OS has more features and more control
+	atomic read&write
+ifstream - read from file
+ofstream - write to file
+fstream - both
+
+if+of for text files, no f
+
+ifstream
+constructor
+	ifstream();	ifstream inf1;
+	ifstream(const char *name, ios_base::openmode nModes = ios::in);
+				   //scary bit here defaults \(^o^)/
+open(const);
+inf.is_open() == true(if open)/false(if not)
+inf >> x >> y;	//Gets hung up if more than one data type
+getline(inf, line);
+inf.getline(char *buff, int);
+
+inf.close();
+inf.seekg(streampos pos);
+basic_isteam &inf.read(char *buff, streamsize count);
+inf.gcount();
+
+flush();	//Dumps out buffer
+outf.flush();
+
+inf.eof() == true if at end of file
+inf.clear(); //Clears file flags
+
+& indicates a reference
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+CopyFile(string from, string to);
+{
+	ifstream inf(from);
+	ofstream outf(to);
+	if(!inf || !outf)
+	{
+		cerr << "Could not open one of the files";
+		exit(1);
+	}
+	while(!inf.eof())
+	{
+		string line;
+		getline(inf, line);
+		outf << line;
+	}
+}
+Windows File System
+//Go to OS for low level programming
+Name		Description				#include
+_sopen_s	open/create a file			<io.h>
+_read		read a sequence of bytes		<>
+_write		write a sequence of bytes		<>
+_lseek		jump to a specified location in file	<>
+_lseek64	jump to a specified location in file	<>
+_tell		indicates where we are			<>
+_tell64		indicates where we are			<>
+_eof		end of file				<>
+_commit		post to disk (flush)			<>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*************************\
+	* Practice Sessions       *
+	* SAT ASB 429/220 @ 2pm   *
+	* FRI ASB 429/220 @ 6-7pm *
+	\*************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
