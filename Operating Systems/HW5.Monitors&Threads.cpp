@@ -1,3 +1,4 @@
+//Compiled in a POSIX environment
 //Status: Compiled without error
 //Remember -std=c++11 -lpthread
 
