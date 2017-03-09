@@ -1,3 +1,4 @@
+//Compiled in a POSIX environment
 #pragma once
 //Status: Compiled without error
 
