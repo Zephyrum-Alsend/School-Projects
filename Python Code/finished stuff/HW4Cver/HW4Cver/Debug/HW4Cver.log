@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\ffastyl liace\desktop\python code\hw4cver\hw4cver\source.cpp(60): warning C4018: '<': signed/unsigned mismatch
+c:\users\ffastyl liace\desktop\python code\hw4cver\hw4cver\source.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\users\ffastyl liace\desktop\python code\hw4cver\hw4cver\source.cpp(68): warning C4018: '<': signed/unsigned mismatch
+c:\users\ffastyl liace\desktop\python code\hw4cver\hw4cver\source.cpp(69): warning C4018: '<': signed/unsigned mismatch
+  HW4Cver.vcxproj -> C:\Users\Ffastyl Liace\Desktop\Python Code\HW4Cver\Debug\HW4Cver.exe

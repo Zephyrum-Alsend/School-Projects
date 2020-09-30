@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spaceballs the Spam</title>
+</head>
+<body>
+
+    <form action = "Info" method = "post">
+    <div>
+        <p><input type="radio" name="Prefix" value="Mr." checked="checked"/> Mr.
+            <input type="radio" name="Prefix" value="Mrs."/> Mrs.
+            <input type="radio" name="Prefix" value="Ms." /> Ms.
+            <input type="radio" name="Prefix" value="Dr." /> Dr.</p>
+        <p><input type="text" name="FirstName" value="" size="20" maxlength="20" placeholder="First Name" required> 
+            <input type="text" name="LastName" value="" size="20" maxlength="20" placeholder="Last Name" required></p>
+        <p><input type="text" name="Street" value="" size="20" maxlength="20" placeholder="Street"> 
+            <input type="text" name="City" value="" size="20" maxlength="20" placeholder="City"></p>
+        <p><select name="State">
+            <option selected="selected" value="">State</option>
+            <option value="NJ">NJ</option>
+            <option value="NY">NY</option>
+            <option value="PA">PA</option>
+            <option value="CT">CT</option>
+         </select> <input type="text" name="Zip" value="" size="20" maxlength="20" placeholder="Zip"></p>
+        <p><input type="text" name="Phone" value="" size="20" maxlength="20" placeholder="Phone"></p>
+        <p><input type="text" name="Email" value="" size="20" maxlength="20" placeholder="Email"></p>
+        <p>How may we contact you?
+            <input type="checkbox" name="Contact1" value="Phone">Phone
+            <input type="checkbox" name="Contact2" value="Mail">Mail
+            <input type="checkbox" name="Contact3" value="Email">Email
+            <input type="checkbox" name="Contact4" value="Any" checked="checked">Any</p>
+        <button type="submit">Spaceballs the Button</button>
+
+        <!--<ul>
+        <% for ( var i = results.length-1; i >= 0; i-- ) { %>
+            <% var c = results[i].result == 'too high' ? 'highGuess' : 'lowGuess';%>
+            <li class='<%= c %>'>
+            <%= results[i].guess %> was <%= results[i].result %>
+            </li>
+        <%}%>
+        </ul>-->
+    </div>
+    </form>
+</body>
+</html>

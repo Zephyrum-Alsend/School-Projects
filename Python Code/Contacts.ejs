@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spaceballs the How Did You Get In Here?</title>
+</head>
+<body>
+
+    <form method = "get">
+    <table>
+        <thead>
+            <tr>
+                <th>Prefix</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <% for(var i = 0; i < contacts.length; i++) { %>
+            <tr>
+            <td><%= contacts[i].Prefix %></td>
+            <td><%= contacts[i].FirstName %></td>
+            <td><%= contacts[i].LastName %></td>
+            <td><%= contacts[i].Street %></td>
+            <td><%= contacts[i].City %></td>
+            <td><%= contacts[i].State %></td>
+            <td><%= contacts[i].Zip %></td>
+            <td><%= contacts[i].Phone %></td>
+            <td><%= contacts[i].Email %></td>
+            </tr>
+    </table>
+    </form>
+</body>
+</html>

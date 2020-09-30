@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spaceballs the Private Information</title>
+</head>
+<body>
+
+    <form method = "get">
+    <div>
+        <p>Contact Information Submitted<br>
+        Name: <%= contact.Prefix %> <%= contact.FirstName %> <%= contact.LastName %><br>
+        Address: <%= contact.Street %>, <%= contact.City %>, <%= contact.State %> <%= contact.Zip %><br>
+        Contact by Phone:   <% if(!contact.Contact1 && !contact.Contact4 || !contact.Phone) { %>
+                                <%= 'No' %>
+                            <% } %>
+                            <% else { %>
+                                <%= results.Phone %>
+                            <% } %><br>
+        Contact by Mail:   <% if(!results.Contact2 && !results.Contact4) { %>
+                                <%= 'No' %>
+                            <% } %>
+                            <% else { %>
+                                <%= 'Yes' %>
+                            <% } %><br>
+        Contact by Email:   <% if(!contact.Contact3 && !contact.Contact4 || !contact.Email) { %>
+                                <%= 'No' %>
+                            <% } %>
+                            <% else { %>
+                                <%= contact.Email %>
+                            <% } %><br>
+        </p>
+        <!--<ul>
+        <% for ( var i = results.length-1; i >= 0; i-- ) { %>
+            <% var c = results[i].result == 'too high' ? 'highGuess' : 'lowGuess';%>
+            <li class='<%= c %>'>
+            <%= results[i].guess %> was <%= results[i].result %>
+            </li>
+        <%}%>
+        </ul>-->
+    </div>
+    </form>
+</body>
+</html>

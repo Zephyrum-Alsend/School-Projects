@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      p {
+          margin: 1em;
+      }
+      
+      #map {
+        margin: 1em;
+        height: 100%;
+        width:500px;
+        height:500px;
+        float: left;
+      }
+      
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Enter an Address: <input id="address-search" type="text" name="Address" value="" size="50" maxlength="500" placeholder="Address"> <button>Spaceballs the Button</button></p>
+    <div id="map"></div>
+    <table id="address-history">
+        
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var geocoder;
+        var map;
+        var Coords = new Array();
+        var counter = 0;
+        function initMap() {
+            geocoder = new google.maps.Geocoder();
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+            });
+        }
+
+        function updateMap(address) {
+            geocoder.geocode( { 'address': address}, function(results, status) {
+                if (status == 'OK') {
+                    Coords[counter] = results[0].geometry.location;
+                    map.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
+
+        function recallMap(coordinate) {
+            map.setCenter(coordinate);
+        }
+        
+        $("button").on("click", function() {
+            var address = $("#address-search").val();
+            $("#address-history").append("<tr><td><button id=" + counter++ + ">" + address + "</button></td></tr>");
+            updateMap(address);
+        } );
+
+        $("#address-history").on("click", "button", function() {
+            // Uncomment if selecting history should re-add the entry to history log.
+            //var address = $(this).text();
+            //$("#address-history").append("<tr><td><button id=" + counter++ + ">" + address + "</button></td></tr>");
+            var local = parseInt($(this).attr("id")) + 1;
+            recallMap(Coords[local]);
+        })
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    async defer></script>   
+  </body>
+</html>
